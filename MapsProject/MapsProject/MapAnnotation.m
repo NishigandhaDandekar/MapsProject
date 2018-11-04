@@ -2,8 +2,8 @@
 //  MapAnnotation.m
 //  MapsProject
 //
-//  Created by rt_user on 6/18/17.
-//  Copyright © 2017 rt_user. All rights reserved.
+//  Created by Nishigandha on 6/18/17.
+//  Copyright © 2017 Nishigandha. All rights reserved.
 //
 
 #import "MapAnnotation.h"

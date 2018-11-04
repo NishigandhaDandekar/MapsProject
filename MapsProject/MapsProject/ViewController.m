@@ -2,8 +2,8 @@
 //  ViewController.m
 //  MapsProject
 //
-//  Created by rt_user on 6/15/17.
-//  Copyright © 2017 rt_user. All rights reserved.
+//  Created by Nishigandha on 6/15/17.
+//  Copyright © 2017 Nishigandha. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -113,7 +113,7 @@
     annotationView.pinTintColor =[UIColor purpleColor];
     annotationView.frame = CGRectMake(0, 0, 90, 200);
     UIButton * button =[UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    [button setBackgroundImage:[UIImage imageNamed:@"navigate.png"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"navigate"] forState:UIControlStateNormal];
     annotationView.rightCalloutAccessoryView = button;
     
    //  annotationView.frame = CGRectMake(0, 0, 70, 200);
@@ -127,35 +127,15 @@
     [mapItem setName:annotation.title];
     [mapItem openInMapsWithLaunchOptions:nil];
 }
-//- (BOOL)textField:(UITextField *)textField
-//shouldChangeCharactersInRange:(NSRange)range
-//replacementString:(NSString *)string {
-//}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField    {
-    
-}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-  //  NSLog(@"Number of Rows %ld",[searchAutoCompleteResults count]);
     return [searchAutoCompleteResults count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     cell.textLabel.text = searchAutoCompleteResults[indexPath.row].title;
     cell.detailTextLabel.text = searchAutoCompleteResults[indexPath.row].subtitle;
-  //  NSLog(@"Result: %@",searchAutoCompleteResults[indexPath.row]);
   
     return cell;
-}
-- (void)completerDidUpdateResults:(MKLocalSearchCompleter *)completer {
-    
-}
-- (IBAction)search:(id)sender {
-    //  MKLocalSearchRequest * request  = [[MKLocalSearchRequest alloc]init];
 }
 @end

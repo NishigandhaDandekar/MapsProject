@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  MapsProject
 //
-//  Created by rt_user on 6/15/17.
-//  Copyright © 2017 rt_user. All rights reserved.
+//  Created by Nishigandha on 6/15/17.
+//  Copyright © 2017 Nishigandha. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
